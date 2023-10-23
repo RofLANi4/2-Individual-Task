@@ -119,36 +119,41 @@ function sort(json) {
       if (+json[j].position < +json[j + 1].position) {
         [json[j], json[j + 1]] = [json[j + 1], json[j]];
         wasSwap = true;
+        continue;
       } else if (+json[j].position > +json[j + 1].position) {
-        wasSwap = true;
+        continue;
       }
 
       if (+json[j].rankAndDegree < +json[j + 1].rankAndDegree) {
         [json[j], json[j + 1]] = [json[j + 1], json[j]];
         wasSwap = true;
+        continue;
       } else if (+json[j].rankAndDegree > +json[j + 1].rankAndDegree) {
-        wasSwap = true;
+        continue;
       }
 
       if (+json[j].age < +json[j + 1].age) {
         [json[j], json[j + 1]] = [json[j + 1], json[j]];
         wasSwap = true;
+        continue;
       } else if (+json[j].age > +json[j + 1].age) {
-        wasSwap = true;
+        continue;
       }
 
       if (+json[j].lengthOfService < +json[j + 1].lengthOfService) {
         [json[j], json[j + 1]] = [json[j + 1], json[j]];
         wasSwap = true;
+        continue;
       } else if (+json[j].lengthOfService > +json[j + 1].lengthOfService) {
-        wasSwap = true;
+        continue;
       }
 
       if (+json[j].pedagogicalActivity < +json[j + 1].pedagogicalActivity) {
         [json[j], json[j + 1]] = [json[j + 1], json[j]];
         wasSwap = true;
-      } else if (+json[j].pedagogicalActivity < +json[j + 1].pedagogicalActivity) {
-        wasSwap = true;
+        continue;
+      } else if (+json[j].pedagogicalActivity > +json[j + 1].pedagogicalActivity) {
+        continue;
       }
     }
 
