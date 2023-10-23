@@ -95,3 +95,91 @@ button {
   margin: 50px auto;
   max-width: 1200px;
 }
+
+@media (max-width: 576px) {
+  body,
+  button,
+  td,
+  input,
+  select {
+    font-size: 10px;
+  }
+
+  .btns .add-td,
+  .send-data,
+  .clear {
+    width: 30%;
+    height: 30px;
+    font-size: 14px;
+  }
+  .lengthOfService,
+  .pedagogical-activity {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  body,
+  button,
+  td,
+  input,
+  select {
+    font-size: 12px;
+  }
+
+  .btns .add-td,
+  .send-data,
+  .clear {
+    width: 25%;
+    height: 40px;
+    font-size: 18px;
+  }
+  .lengthOfService,
+  .pedagogical-activity {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body,
+  button,
+  td,
+  input,
+  select {
+    font-size: 16px;
+  }
+
+  .btns .add-td,
+  .send-data,
+  .clear {
+    width: 30%;
+    height: 45px;
+    font-size: 20px;
+  }
+  .lengthOfService,
+  .pedagogical-activity {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  body,
+  button,
+  td,
+  input,
+  select {
+    font-size: 18px;
+  }
+
+  .btns .add-td,
+  .send-data,
+  .clear {
+    width: 30%;
+    height: 45px;
+    font-size: 22px;
+  }
+  .lengthOfService,
+  .pedagogical-activity {
+    font-size: 16px;
+  }
+}
