@@ -200,7 +200,6 @@ function createSortedTable(data) {
 function fillSortedTable(data) {
   const sortedTableBody = document.querySelector(".sorted_table tbody");
 
-  console.log(data);
   data.forEach((value) => {
     const sortedTableLine = document.createElement("tr");
     sortedTableLine.classList.add("sorted_line");
